@@ -130,6 +130,84 @@ body {
   display: block;
 }
 
+/* pop window */
+.popUp-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popUp {
+  width: 550px;
+  height: 330px;
+  padding: 10px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  background: linear-gradient(
+    90deg,
+    rgba(232, 160, 191, 1) 25%,
+    rgba(192, 219, 234, 1) 80%
+  );
+}
+
+.popUp-form-text {
+  padding: 1px;
+  text-align: center;
+  font-size: 15px;
+}
+.popUp-form-input {
+  height: 30px;
+  width: 165px;
+  border-radius: 10px;
+  border: 0;
+  padding: 2px;
+}
+
+.update-btn {
+  display: block;
+  background-color: rgba(232, 160, 191, 1);
+  border: 0;
+  border-radius: 3px;
+  filter: brightness(50%);
+  color: white;
+  text-align: center;
+  height: 34px;
+  width: 150px;
+  padding: 1px;
+  cursor: pointer;
+}
+
+.update-btn:hover {
+  background-color: transparent;
+  border: 0.2px solid;
+  filter: brightness(0);
+}
+
+.popUp-form-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 10px;
+}
+
+.popUp-form-date {
+  padding: 2px;
+}
+.close-btn {
+  position: relative;
+  top: 100px;
+}
+/* footer */
 footer {
   width: 100vw;
   height: 50px;
